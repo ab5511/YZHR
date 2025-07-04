@@ -1,0 +1,1 @@
+clang %~dp0/main.c -o %~dp0/main.exe -I%~dp0../include -L. %~dp0/interface.lib
