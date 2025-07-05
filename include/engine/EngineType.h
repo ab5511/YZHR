@@ -9,7 +9,7 @@
 #include <uchar.h>
 
 #define __E_VRESION__(major, minor, patch) (_u32)((major %0XFFFU) <<(0X14U) |((minor %0XFFFU) <<(0X8U)) |(patch %0XFFU))
-#define __ENGINE_VERSION__ __E_VRESION__(0, 1, 0)
+#define __ENGINE_VERSION__ __E_VRESION__(0, 1, 1)
 
 #define __E_LEVEL_INFO__     (_log_level_)(0X00U)
 #define __E_LEVEL_DEBUG__    (_log_level_)(0X01U)
@@ -53,8 +53,6 @@ typedef double _dou;
 typedef _u8 _b_;
 
 typedef _u32 _log_level_;
-
-typedef time_t _T_;
 
 typedef struct kev_value_{
     con _c_* kev;

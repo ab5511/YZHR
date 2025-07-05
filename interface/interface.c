@@ -4,8 +4,7 @@
 #include <windows.h>
 #else//defined(_WIN32) || defined(_WIN64)
 
-#if defined(__APPLE__) && defined(__MACH__)
-#elif defined(__linux__)
+#if defined(__linux__)
 #endif//defined(__APPLE__) && defined(__MACH__)
 
 #include <dlfcn.h>
@@ -17,8 +16,6 @@ extern "C" {
 
 #if defined(_WIN32) || defined(_WIN64)
 sta con _c_* __lib_path__ = "./engine.dll";
-#elif defined(__APPLE__) && defined(__MACH__)
-sta con _c_* __lib_path__ = "./libengine.dylib";
 #elif defined(__linux__)
 sta con _c_* __lib_path__ = "./libengine.so";
 #else
